@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdfaf4;
+  --foreground: #1c1614;
+  --wine: #5b1d1d;
+  --wine-deep: #421414;
+  --gold: #b8935c;
+  --paper: #faf6ee;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'ss02', 'cv01';
+}
+
+/* Paper grain background for editorial feel */
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(91, 29, 29, 0.03) 1px, transparent 1px),
+    radial-gradient(rgba(184, 147, 92, 0.025) 1px, transparent 1px);
+  background-size: 3px 3px, 5px 5px;
+  background-position: 0 0, 1.5px 1.5px;
+}
+
+/* Editorial rule */
+.editorial-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(91, 29, 29, 0.18) 12%,
+    rgba(91, 29, 29, 0.55) 50%,
+    rgba(91, 29, 29, 0.18) 88%,
+    transparent 100%
+  );
+}
+
+.editorial-rule-thin {
+  border: none;
+  height: 1px;
+  background: rgba(28, 22, 20, 0.12);
+}
+
+/* Score chip mono */
+.score-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-feature-settings: 'tnum', 'lnum';
+  letter-spacing: 0.02em;
+}
+
+/* Subtle wine-glass shimmer on headliner */
+.headliner-glow {
+  position: relative;
+  isolation: isolate;
+}
+.headliner-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(184, 147, 92, 0.6),
+    rgba(91, 29, 29, 0.4) 50%,
+    rgba(184, 147, 92, 0.6)
+  );
+  background-size: 200% 200%;
+  animation: shimmer 8s ease infinite;
+}
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+}
+
+/* Drop cap for editorial intro */
+.dropcap::first-letter {
+  font-family: var(--font-display), serif;
+  float: left;
+  font-size: 3.5em;
+  line-height: 0.85;
+  padding-right: 0.08em;
+  padding-top: 0.1em;
+  color: var(--wine);
+  font-weight: 600;
+}
+
+/* Smooth focus rings */
+*:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 2px;
+}
+
+/* Table look */
+.editorial-table th {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  color: rgba(28, 22, 20, 0.55);
+  border-bottom: 1px solid rgba(28, 22, 20, 0.18);
+}
+.editorial-table td {
+  border-bottom: 1px solid rgba(28, 22, 20, 0.06);
+}
+
+/* Subtle button reset */
+.btn-ghost {
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headliner-glow::before { animation: none; }
+}

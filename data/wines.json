@@ -1,0 +1,282 @@
+{
+  "wines": [
+    {
+      "id": "L01",
+      "name": "Placido Chianti DOCG",
+      "producer": "Castello Banfi",
+      "country": "IT",
+      "region": "Toscane",
+      "appellation": "Chianti DOCG",
+      "varietals": ["Sangiovese", "Canaiolo", "Cabernet Sauvignon"],
+      "vintage": null,
+      "type": "red",
+      "category": "everyday",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 12.18, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [],
+      "tastingNotes": "Bouche fraîche, cerise, prune, herbes séchées, tanins fins. À servir 14-16°C.",
+      "foodPairings": ["Pizza margherita", "Pâtes tomate", "Lasagnes", "Charcuterie"],
+      "drinkingWindow": "À boire dans les 2 ans",
+      "dealFlag": "deal",
+      "curatorNotes": "Le Chianti DOCG le moins cher du panier, fait par Banfi (la même maison que le Brunello L11). DOCG à 12$ — affaire structurelle."
+    },
+    {
+      "id": "L02",
+      "name": "Albali Reserva",
+      "producer": "Felix Solis",
+      "country": "ES",
+      "region": "Castilla La Mancha",
+      "appellation": "Valdepeñas DO",
+      "varietals": ["Tempranillo"],
+      "vintage": null,
+      "type": "red",
+      "category": "everyday",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 14.05, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [],
+      "tastingNotes": "Cerise mûre, vanille discrète, tabac, cuir léger (élevage 12 mois fûts). Pas de grande complexité mais zéro défaut.",
+      "foodPairings": ["Brochettes", "Ragoût", "Charcuterie", "Pâtes viande"],
+      "drinkingWindow": "À boire dans les 3 ans",
+      "dealFlag": "fair",
+      "curatorNotes": "Quotidien espagnol fiable de la Mancha. Pas de note pro forte mais Felix Solis est un producteur sérieux du segment économique."
+    },
+    {
+      "id": "L03",
+      "name": "Juan Gil Vino Tinto",
+      "producer": "Bodegas Juan Gil",
+      "country": "ES",
+      "region": "Murcia",
+      "appellation": "Jumilla DO",
+      "varietals": ["Monastrell"],
+      "vintage": null,
+      "type": "red",
+      "category": "everyday",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 16.91, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "Wine Advocate", "score": 90, "scoreRange": "89-91", "vintageReviewed": "récents", "notes": "Silver Label 4 meses — Luis Gutiérrez typique" },
+        { "critic": "Wine Enthusiast", "score": 90, "label": "Best Buy", "vintageReviewed": "récents" },
+        { "critic": "Wine Spectator", "score": 90, "vintageReviewed": "récents" }
+      ],
+      "tastingNotes": "Robe encre, mûre, prune confite, chocolat noir, garrigue, alcool généreux (14-14.5°).",
+      "foodPairings": ["Agneau grillé", "Cassoulet", "Magret", "Fromages affinés"],
+      "drinkingWindow": "À boire dans les 4 ans",
+      "dealFlag": "deal",
+      "curatorNotes": "⭐ La vraie pépite quotidien du catalogue Laguarda. Juan Gil Silver Label régulièrement WA 90+ / WE Best Buy à <20$. Quasi imbattable en rapport notes/prix."
+    },
+    {
+      "id": "L04",
+      "name": "Calvet Reserve Merlot-Cabernet Sauvignon",
+      "producer": "Calvet",
+      "country": "FR",
+      "region": "Bordeaux",
+      "appellation": "Bordeaux AOC",
+      "varietals": ["Merlot", "Cabernet Sauvignon"],
+      "vintage": null,
+      "type": "red",
+      "category": "everyday",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 17.69, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [],
+      "tastingNotes": "Cassis, prune, cèdre, soupçon de cuir, tanins fermes. Profil 'structure bordelaise' identifiable.",
+      "foodPairings": ["Entrecôte", "Magret", "Fromages à pâte dure", "Gigot"],
+      "drinkingWindow": "À boire dans 3-5 ans",
+      "dealFlag": "fair",
+      "curatorNotes": "Le seul vrai Bordeaux français abordable du catalogue. Calvet = négoce historique fondé 1818. Pas de pedigree critique fort mais propre."
+    },
+    {
+      "id": "L05",
+      "name": "Planeta La Segreta Rosso",
+      "producer": "Planeta",
+      "country": "IT",
+      "region": "Sicile",
+      "appellation": "Sicilia IGT",
+      "varietals": ["Nero d'Avola", "Merlot", "Syrah", "Cabernet Franc"],
+      "vintage": "2020",
+      "type": "red",
+      "category": "everyday+",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 20.47, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "James Suckling", "score": 91, "vintageReviewed": "2020", "notes": "« Arômes d'herbes séchées, écorce, baies noires, cendre, noyaux de prune ; bien structuré, tanins fins et fermes. »" },
+        { "critic": "Wine Enthusiast", "score": 91, "label": "Best Buy", "vintageReviewed": "2020" }
+      ],
+      "tastingNotes": "Cerise, fruits noirs, herbes méditerranéennes, soupçon de réglisse. Bouche fruitée, tanins lisses, acidité juste.",
+      "foodPairings": ["Pizza", "Pâtes alla norma", "Parmigiana", "Caponata", "Agneau aux herbes"],
+      "drinkingWindow": "À boire dans les 3 ans — millésime 2020 idéal",
+      "dealFlag": "fair",
+      "curatorNotes": "Exiger le millésime 2020 (le 2018 est aussi à 91 JS). Planeta est une des références siciliennes modernes."
+    },
+    {
+      "id": "L06",
+      "name": "Muga Rosado",
+      "producer": "Bodegas Muga",
+      "country": "ES",
+      "region": "Rioja",
+      "appellation": "Rioja DOCa",
+      "varietals": ["Garnacha 60%", "Viura 30%", "Tempranillo 10%"],
+      "vintage": "2024-2025",
+      "type": "rosé",
+      "category": "everyday+",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 22.15, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "James Suckling", "score": 92, "vintageReviewed": "2025", "notes": "« Bone-dry and crisp with bright acidity and elegant nectarine and grapefruit flavors. »" },
+        { "critic": "Wine Advocate", "score": 90, "vintageReviewed": "2025" }
+      ],
+      "tastingNotes": "Robe saumon-pamplemousse. Fraise des bois, pamplemousse rose, fleur d'oranger, fond épicé. Bouche structurée (rare pour un rosé), acidité vibrante, finale longue et minérale.",
+      "foodPairings": ["Ceviche", "Langoustines", "Paella", "Jambon ibérique", "Salade de gésiers"],
+      "drinkingWindow": "À boire dans les 18 mois — exiger 2024 ou 2025",
+      "dealFlag": "fair",
+      "curatorNotes": "Le seul rosé sérieux du catalogue. Plus structuré qu'un Provence — tient le ceviche corsé. Pas de Provence (Minuty/AIX/Ott) chez Laguarda."
+    },
+    {
+      "id": "L07",
+      "name": "Planeta Plumbago Nero d'Avola",
+      "producer": "Planeta",
+      "country": "IT",
+      "region": "Sicile",
+      "appellation": "Sicilia DOC",
+      "varietals": ["Nero d'Avola"],
+      "vintage": null,
+      "type": "red",
+      "category": "mid",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 30.03, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [],
+      "tastingNotes": "Robe profonde. Mûre, cerise noire confite, réglisse, fumée, vanille discrète (12 mois fûts français). Bouche dense, tanins fins.",
+      "foodPairings": ["Agneau braisé", "Pasta al ragù", "Pecorino affiné", "Taleggio"],
+      "drinkingWindow": "5-7 ans",
+      "dealFlag": "fair",
+      "curatorNotes": "Single-vineyard Planeta. Notes pro précises non extraites cette passe — fiabilité sur pedigree producteur. Demander millésime."
+    },
+    {
+      "id": "L08",
+      "name": "Achaval-Ferrer Finca Mirador Malbec",
+      "producer": "Achaval-Ferrer",
+      "country": "AR",
+      "region": "Mendoza",
+      "appellation": "Luján de Cuyo — Medrano (single vineyard)",
+      "varietals": ["Malbec"],
+      "vintage": null,
+      "type": "red",
+      "category": "mid-high",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 47.5, "lastChecked": "2026-06-23", "isOnSale": true, "promoPercent": 41, "originalPrice": 80.51 }
+      ],
+      "criticScores": [
+        { "critic": "James Suckling", "score": 93, "scoreRange": "92-95", "vintageReviewed": "récents", "notes": "Cuvée Finca typiquement notée 92-95 par JS/WA/Vinous." },
+        { "critic": "Wine Advocate", "score": 93, "scoreRange": "92-95", "vintageReviewed": "récents" }
+      ],
+      "tastingNotes": "Robe encre. Nez intense de mûre, violette, prune noire, chocolat amer, encens. Bouche dense, concentrée, tanins fins et serrés, fraîcheur d'altitude, finale très longue sur le fruit noir et le cacao.",
+      "foodPairings": ["Asado argentin", "Picaña", "Magret", "Agneau confit", "Gnocchi à la sauce viande"],
+      "drinkingWindow": "5-10 ans — millésimes 2018-2020 idéaux",
+      "dealFlag": "deal",
+      "curatorNotes": "Le top du Malbec parcellaire. Achaval-Ferrer = top 3-4 maisons mondiales du cépage. Demander le millésime en magasin et vérifier la note exacte."
+    },
+    {
+      "id": "L09",
+      "name": "Carmin de Peumo Carménère",
+      "producer": "Concha y Toro",
+      "country": "CL",
+      "region": "Cachapoal Valley",
+      "appellation": "Peumo (single vineyard)",
+      "varietals": ["Carménère 95%"],
+      "vintage": "2019",
+      "type": "red",
+      "category": "high",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 52.0, "lastChecked": "2026-06-23", "isOnSale": true, "promoPercent": 51, "originalPrice": 106.12 }
+      ],
+      "criticScores": [
+        { "critic": "Wine Advocate", "score": 95, "reviewer": "Luis Gutiérrez", "vintageReviewed": "2019", "notes": "« Puissant mais équilibré et élégant, tanins fins et abondants, finale persistante, notes de cendre de cigare, café espresso, chocolat noir. »" },
+        { "critic": "James Suckling", "score": 96, "vintageReviewed": "2019" }
+      ],
+      "tastingNotes": "Robe presque noire. Nez de fruits noirs mûrs, poivron grillé fumé, cacao, café espresso. Bouche puissante, tanins fins, finale persistante sur le cigare et le chocolat noir.",
+      "foodPairings": ["Cuy rôti", "Lomo saltado", "Bœuf grillé au poivre", "Magret de canard", "Parmesan vieilli"],
+      "drinkingWindow": "5-12 ans — apogée 2026-2030",
+      "dealFlag": "deal",
+      "isHeadliner": true,
+      "curatorNotes": "⭐⭐⭐ LA GROSSE AFFAIRE du panier. WA 95 (Luis Gutiérrez) + JS 96, promo -51%, icône mondiale du Carménère. Winemaker Marcio Ramirez (25+ ans sur le cépage, fait aussi Terrunyo). EXIGER 2019. À prendre en double si stock dispo."
+    },
+    {
+      "id": "L10",
+      "name": "Muga Reserva Tinto",
+      "producer": "Bodegas Muga",
+      "country": "ES",
+      "region": "Rioja",
+      "appellation": "Rioja DOCa",
+      "varietals": ["Tempranillo 70%", "Garnacha", "Mazuelo", "Graciano"],
+      "vintage": null,
+      "type": "red",
+      "category": "high",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 60.12, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "James Suckling", "score": 93, "scoreRange": "93-94", "vintageReviewed": "récents", "notes": "Reserva typiquement 93-94 sur 2018-2019." },
+        { "critic": "Wine Advocate", "score": 93, "scoreRange": "92-94", "vintageReviewed": "récents" }
+      ],
+      "tastingNotes": "Cerise mûre, prune, vanille fine, tabac blond, cuir, fond minéral. Bouche soyeuse, tanins nobles, longueur exceptionnelle. Élevage 24 mois fûts français+américains.",
+      "foodPairings": ["Gigot d'agneau", "Magret", "Perdrix", "Manchego affiné", "Jambon Bellota"],
+      "drinkingWindow": "2026-2034 — demander 2018 ou 2019",
+      "dealFlag": "fair",
+      "curatorNotes": "Top 5 Rioja absolu. À 60$ chez Laguarda c'est moins cher et mieux noté que le Protos Reserva à 68$."
+    },
+    {
+      "id": "L11",
+      "name": "Castello Banfi Brunello di Montalcino",
+      "producer": "Castello Banfi",
+      "country": "IT",
+      "region": "Toscane",
+      "appellation": "Brunello di Montalcino DOCG",
+      "varietals": ["Sangiovese Grosso"],
+      "vintage": "2019",
+      "type": "red",
+      "category": "keeper",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 102.11, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "Wine Spectator", "score": 94, "reviewer": "Bruce Sanderson", "vintageReviewed": "2019", "notes": "« Brunello raffiné et généreux, prune, cerise, fraise et notes florales. »" },
+        { "critic": "Wine Spectator (millésime)", "score": 98, "vintageReviewed": "2019", "notes": "« Brunello's 2019 Triumph » — millésime global." }
+      ],
+      "tastingNotes": "Robe rubis évoluant tuilé. Nez complexe : cerise noire, prune, cuir, tabac, herbes séchées, terre humide, fleur fanée. Bouche structurée, tanins fermes et nobles, acidité typique du Sangiovese, finale très longue sur l'amertume noble.",
+      "foodPairings": ["Bistecca alla fiorentina", "Sanglier en daube", "Ragoût de gibier", "Pecorino de Pienza affiné"],
+      "drinkingWindow": "2027-2035 — carafer 2h si jeune",
+      "dealFlag": "fair",
+      "curatorNotes": "Le vin de garde du panier. EXIGER millésime 2019 (98/100). Sangiovese Grosso 100% = profil aromatique unique au monde."
+    },
+    {
+      "id": "L12",
+      "name": "Carmelo Rodero 9 Meses",
+      "producer": "Bodegas Carmelo Rodero",
+      "country": "ES",
+      "region": "Castilla y León",
+      "appellation": "Ribera del Duero DO",
+      "varietals": ["Tempranillo (Tinto Fino)"],
+      "vintage": null,
+      "type": "red",
+      "category": "mid",
+      "shopPrices": [
+        { "shopId": "laguarda", "price": 34.43, "lastChecked": "2026-06-23", "isOnSale": false }
+      ],
+      "criticScores": [
+        { "critic": "Tim Atkin", "score": 92, "scoreRange": "91-92", "vintageReviewed": "récents" },
+        { "critic": "Wine Advocate", "score": 90, "vintageReviewed": "récents" }
+      ],
+      "tastingNotes": "Robe profonde. Fruits noirs concentrés (mûre, cassis), épices douces, vanille fine. Bouche puissante mais fraîche, tanins mûrs. Élevage 9 mois fûts.",
+      "foodPairings": ["Cordero asado", "Magret aux épices", "Bœuf grillé", "Fromages bleus"],
+      "drinkingWindow": "4-6 ans",
+      "dealFlag": "fair",
+      "curatorNotes": "Domaine familial à Pedrosa de Duero. Ribera del Duero 'Roble' moderne — alternative au Reserva classique, plus juteux. Tim Atkin couvre Carmelo Rodero régulièrement."
+    }
+  ]
+}

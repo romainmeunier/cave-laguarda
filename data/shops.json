@@ -1,0 +1,30 @@
+{
+  "shops": [
+    {
+      "id": "laguarda",
+      "name": "LaGuarda",
+      "website": "https://www.laguarda.com.ec/",
+      "phone": "+593 96 307 3457",
+      "locations": [
+        {
+          "name": "LaGuarda Cumbayá",
+          "address": "Av. Pampite, Edificio Impaqto, Local #4",
+          "city": "Cumbayá",
+          "isPrimary": true
+        },
+        {
+          "name": "LaGuarda Quito — Sector La Paz",
+          "address": "Quito, Sector La Paz",
+          "city": "Quito",
+          "isPrimary": false
+        }
+      ],
+      "delivery": [
+        { "channel": "Rappi", "storeId": "367", "url": "https://www.rappi.com.ec/tiendas/367-laguarda-quito" },
+        { "channel": "Rappi", "storeId": "25488", "url": "https://www.rappi.com.ec/tiendas/25488-laguarda" },
+        { "channel": "UberEats", "storeId": "Ypj3r6OGXZeryLCGM-Gc6w", "url": "https://www.ubereats.com/ec/store/laguarda-cumbaya/Ypj3r6OGXZeryLCGM-Gc6w" }
+      ],
+      "notes": "Multimarque vins et spiritueux, plus de 1000 références. Boutique de Cumbayá la plus proche, ouvert 7j/7."
+    }
+  ]
+}

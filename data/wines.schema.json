@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cave Laguarda — Wines",
+  "type": "object",
+  "required": ["wines"],
+  "properties": {
+    "wines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "producer", "country", "region", "varietals", "type", "category", "shopPrices", "dealFlag"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^L\\d{2,}$" },
+          "name": { "type": "string" },
+          "producer": { "type": "string" },
+          "country": { "type": "string", "enum": ["FR", "IT", "ES", "AR", "CL", "US", "DE", "PT", "ZA", "AU", "NZ"] },
+          "region": { "type": "string" },
+          "appellation": { "type": "string" },
+          "varietals": { "type": "array", "items": { "type": "string" } },
+          "vintage": { "type": ["string", "null"] },
+          "type": { "type": "string", "enum": ["red", "white", "rosé", "sparkling", "fortified"] },
+          "category": { "type": "string", "enum": ["everyday", "everyday+", "mid", "mid-high", "high", "keeper"] },
+          "shopPrices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["shopId", "price", "lastChecked"],
+              "properties": {
+                "shopId": { "type": "string" },
+                "price": { "type": "number" },
+                "lastChecked": { "type": "string", "format": "date" },
+                "isOnSale": { "type": "boolean" },
+                "promoPercent": { "type": "number" },
+                "originalPrice": { "type": "number" },
+                "url": { "type": "string" }
+              }
+            }
+          },
+          "criticScores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["critic", "score"],
+              "properties": {
+                "critic": { "type": "string" },
+                "score": { "type": "number" },
+                "scoreRange": { "type": "string" },
+                "reviewer": { "type": "string" },
+                "vintageReviewed": { "type": "string" },
+                "label": { "type": "string" },
+                "notes": { "type": "string" }
+              }
+            }
+          },
+          "tastingNotes": { "type": "string" },
+          "foodPairings": { "type": "array", "items": { "type": "string" } },
+          "drinkingWindow": { "type": "string" },
+          "dealFlag": { "type": "string", "enum": ["deal", "fair", "expensive"] },
+          "isHeadliner": { "type": "boolean" },
+          "curatorNotes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
