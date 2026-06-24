@@ -1,0 +1,6 @@
+# Config Supabase pour CLI / GitHub integration.
+# project_id à remplacer si tu utilises le CLI local (pas requis pour la sync GitHub).
+project_id = "cave-laguarda"
+
+[db]
+major_version = 15
