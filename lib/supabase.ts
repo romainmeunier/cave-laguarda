@@ -1,11 +1,14 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+// Accepte le nouveau nom (publishable_key, sb_publishable_*) et l'ancien (anon_key)
+const publicKey =
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 export const supabase: SupabaseClient | null =
-  url && anonKey
-    ? createClient(url, anonKey, {
+  url && publicKey
+    ? createClient(url, publicKey, {
         auth: {
           persistSession: true,
           autoRefreshToken: true,
