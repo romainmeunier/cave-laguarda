@@ -50,6 +50,7 @@ export default function RootLayout({
               <NavLink href="/">Cave</NavLink>
               <NavLink href="/bar">Bar</NavLink>
               <NavLink href="/cocktails">Cocktails</NavLink>
+              <NavLink href="/ce-soir">Ce soir</NavLink>
               <NavLink href="/deals">Affaires</NavLink>
               <NavLink href="/shops">Cavistes</NavLink>
               <div className="ml-2 pl-2 border-l border-ink-900/10">

@@ -21,8 +21,9 @@ de Bar Romain.
 | Domaine | Fichier data | Routes | Suivi user |
 |---|---|---|---|
 | Vins (cave) | `data/wines.json` (12 vins, L01..L12) | `/`, `/wines/[id]` | Supabase `user_cellar` |
-| Bar (bouteilles, sirops, frais) | `data/bar.json` (38 items, B01..B38) | `/bar` | (à venir) `user_bar` |
-| Cocktails (recettes) | `data/recipes.json` (24 recettes, R01..R24) | `/cocktails`, `/cocktails/[id]` | (à venir) `user_recipes` |
+| Bar (bouteilles, sirops, frais) | `data/bar.json` (38 items, B01..B38) | `/bar` | Supabase `user_bar` |
+| Cocktails (recettes) | `data/recipes.json` (24 recettes, R01..R24) | `/cocktails`, `/cocktails/[id]` | Supabase `user_recipes` |
+| Matching faisabilité | (calcul live) | `/ce-soir` | lit `user_bar` |
 | Cavistes | `data/shops.json` | `/shops` | — |
 
 Chaque ingrédient de recette pointe optionnellement vers `bottleRef` (id de `bar.json`).
@@ -59,6 +60,20 @@ Quand Romain te demande quelque chose ici, par défaut c'est l'une de ces tâche
 
 6. **Ajouter une recette de cocktail** dans `data/recipes.json` (préfixe d'ID `R`,
    spirit dominant, ingrédients avec `bottleRef` pointant vers `bar.json` quand possible).
+
+## Moteur de faisabilité (`/ce-soir`)
+
+`lib/feasibility.ts` calcule pour chaque recette son `status` :
+
+- `ready` : tous les ingrédients liés à un bottle sont `ok`.
+- `low` : tous présents, mais au moins un est `low`.
+- `one-missing` : exactement 1 bottle requis est `out`.
+- `missing` : 2+ bottles requis sont `out`.
+
+Les ingrédients sans `bottleRef` (œuf, café expresso, eau gazeuse, noix de muscade)
+sont considérés comme "externes" et toujours disponibles. Quand un ingrédient libre
+est en fait courant à acheter (ex café), envisager de l'ajouter dans `bar.json` avec
+`category: divers` pour le tracker proprement.
 
 ## Stack
 
