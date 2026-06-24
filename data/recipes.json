@@ -1,0 +1,484 @@
+{
+  "recipes": [
+    {
+      "id": "R01",
+      "name": "Cumbayá Sour",
+      "tagline": "100% équatorien — naranjilla & pisco",
+      "defaultStatus": "À tester",
+      "spirit": "pisco",
+      "profile": ["Floral", "Acide", "Terreux", "Mousseux"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Tabernero La Botija Acholado", "bottleRef": "B01" },
+        { "amount": "¾ oz", "item": "Pulpa de naranjilla", "bottleRef": "B29" },
+        { "amount": "1 oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "1", "item": "Blanc d'œuf" },
+        { "amount": "2 traits", "item": "Rossard Amargo", "bottleRef": "B23" }
+      ],
+      "method": "Reverse dry shake — shake avec glace 10 sec, double strain dans shaker vide, shake sec vigoureux 15 sec sans glace. Verse en coupe.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil + 2 traits Rossard sur la mousse",
+      "notes": "Recette originale Bar Romain. La naranjilla est unique à l'Équateur. Le cordial maison remplace jus + panela — tester Batch A (plus floral) vs Batch B (plus vif).",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R02",
+      "name": "Humo Tropical",
+      "tagline": "Mezcal fumé × maracuyá × feu",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Fumé", "Tropical", "Épicé", "Vif"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Ojo de Tigre Mezcal", "bottleRef": "B02" },
+        { "amount": "1 oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "¼ oz", "item": "Miel dilué 1:1", "bottleRef": "B38" },
+        { "amount": "3 traits", "item": "Sharab Dr. Fire", "bottleRef": "B24" }
+      ],
+      "method": "Shaker fort avec glace. Strain en rocks glass sur glaçon unique.",
+      "glass": "Rocks",
+      "garnish": "Rimmer sel fin + zeste limón. Demi-maracuyá en décoration.",
+      "notes": "Accord fumé-tropical validé par Saveur & Difford's. Cordial + miel dilué remplace jus + sirop — le miel garde la rondeur face au fumé du mezcal.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R03",
+      "name": "La Botija Negra",
+      "tagline": "Pisco × Campari × maracuyá — l'inattendu",
+      "defaultStatus": "À tester",
+      "spirit": "pisco",
+      "profile": ["Amer", "Tropical", "Floral", "Complexe"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Tabernero La Botija Acholado", "bottleRef": "B01" },
+        { "amount": "¾ oz", "item": "Campari", "bottleRef": "B11" },
+        { "amount": "¾ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" }
+      ],
+      "method": "Shaker avec glace. Double strain en coupe.",
+      "glass": "Coupe",
+      "garnish": "Finish Spray Lemon + zeste orange si disponible",
+      "notes": "L'amer du Campari contre le floral du pisco, bridgé par la maracuyá. Le cordial maison remplace jus + sucre — les huiles du zeste renforcent le côté floral du pisco acholado.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R04",
+      "name": "La Botija Dorada",
+      "tagline": "Pisco Sour Maracuyá — création Bar Romain",
+      "defaultStatus": "À tester",
+      "spirit": "pisco",
+      "profile": ["Floral", "Tropical", "Mousseux", "Acide"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Tabernero La Botija Acholado", "bottleRef": "B01" },
+        { "amount": "¾ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "¾ oz", "item": "Cordial de limón sutil maison", "bottleRef": "B17" },
+        { "amount": "1", "item": "Blanc d'œuf" },
+        { "amount": "2 traits", "item": "Rossard Amargo (dans le shaker)", "bottleRef": "B23" }
+      ],
+      "method": "Reverse dry shake — shake avec glace 10 sec, double strain dans shaker vide, shake sec vigoureux 15 sec sans glace. Verse en coupe.",
+      "glass": "Coupe",
+      "garnish": "3 traits Rossard dessinés sur la mousse + zeste limón sutil",
+      "notes": "Le cordial maison remplace jus + sucre séparés — plus aromatique, plus complexe. Le Rossard dans le shaker intègre l'amer; sur la mousse il parfume le nez à chaque gorgée.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R05",
+      "name": "Gimlet Maison",
+      "tagline": "Tanqueray × cordial limón sutil — test des deux batchs",
+      "defaultStatus": "En cours",
+      "spirit": "gin",
+      "profile": ["Acide", "Floral", "Vif", "Complexe"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Tanqueray (ou Cruzloma)", "bottleRef": "B06" },
+        { "amount": "1 oz", "item": "Cordial de limón sutil maison", "bottleRef": "B17" }
+      ],
+      "method": "Stirré avec glace 20 secondes. Strain en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil exprimé sur le bord du verre",
+      "notes": "Recette de référence pour comparer les batchs de cordial. Batch A — méthode froide 24h. Batch B — Morgenthaler blender. Même ratio, même gin, dégustation comparative.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R06",
+      "name": "Honey Bee",
+      "tagline": "Botran 8 × miel × cordial limón — classique revisité",
+      "defaultStatus": "À tester",
+      "spirit": "rhum",
+      "profile": ["Floral", "Vif", "Tropical", "Complexe"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Botran 8 Solera", "bottleRef": "B05" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "¾ oz", "item": "Miel dilué 1:1", "bottleRef": "B38" }
+      ],
+      "method": "Shaker avec glace, shake fort 10 sec. Double strain en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil + goutte de miel sur le bord du verre",
+      "notes": "Botran 8 choisi pour sa légèreté — laisse le miel et le cordial s'exprimer. Variation : 2 traits Sharab Tiki pour une touche tropicale.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R07",
+      "name": "White Lady Cruzloma",
+      "tagline": "Trois agrumes × gin équatorien × mousse",
+      "defaultStatus": "Validé",
+      "spirit": "gin",
+      "profile": ["Floral", "Acide", "Mousseux", "Complexe"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Cruzloma Handcrafted Gin", "bottleRef": "B08" },
+        { "amount": "¾ oz", "item": "Luxardo Triplum", "bottleRef": "B09" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "1", "item": "Blanc d'œuf" }
+      ],
+      "method": "Reverse dry shake — shake avec glace 10 sec, double strain dans shaker vide, shake sec vigoureux 15 sec. Verse en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil exprimé sur la mousse + Finish Spray Lemon",
+      "notes": "Cruzloma remplace le London Dry classique — moins junipérisé, plus floral. Trois agrumes superposés : guayusa Cruzloma + mandarine Triplum + limón sutil cordial maison.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R08",
+      "name": "Gin Fizz",
+      "tagline": "Le classique — gin, citron, sucre, eau gazeuse",
+      "defaultStatus": "À tester",
+      "spirit": "gin",
+      "profile": ["Vif", "Acide", "Léger", "Floral"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Tanqueray", "bottleRef": "B06" },
+        { "amount": "1 oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "2 oz", "item": "Agua con gas" }
+      ],
+      "method": "Shaker avec glace, shake 10 sec. Strain en highball sur glace. Top agua con gas, ne pas stirrer.",
+      "glass": "Highball",
+      "garnish": "Zeste limón sutil",
+      "notes": "Le fizz de base — ne jamais stirrer après le top gazeux. Verser délicatement sur le bord du verre.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R09",
+      "name": "Gin Fizz — Version Bar Romain",
+      "tagline": "Cruzloma × cordial × maracuyá × mousse × Cinchona",
+      "defaultStatus": "À tester",
+      "spirit": "gin",
+      "profile": ["Tropical", "Floral", "Mousseux", "Vif"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Cruzloma Handcrafted Gin", "bottleRef": "B08" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "½ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "1", "item": "Blanc d'œuf" },
+        { "amount": "2 oz", "item": "Cinchona Agua Tónica", "bottleRef": "B36" }
+      ],
+      "method": "Reverse dry shake — shake avec glace 10 sec, double strain dans shaker vide, shake sec 15 sec. Verse en highball sur glace. Top Cinchona délicatement.",
+      "glass": "Highball",
+      "garnish": "Finish Spray Lemon + zeste limón sutil + 2 traits Sharab Tiki sur la mousse",
+      "notes": "Le Cinchona remplace l'eau gazeuse — la quinine de Loja ajoute une légère amertume qui équilibre le tropical de la maracuyá. Sharab Tiki en finition pour le côté exotique.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R10",
+      "name": "Cristalino Margarita",
+      "tagline": "Mezcal doux × Cointreau × cordial maison",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Vif", "Floral", "Acide", "Complexe"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Contraluz Cristalino", "bottleRef": "B07" },
+        { "amount": "¾ oz", "item": "Cointreau", "bottleRef": "B12" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" }
+      ],
+      "method": "Shaker avec glace, shake fort 10 sec. Strain en rocks glass sur glaçon unique.",
+      "glass": "Rocks",
+      "garnish": "Rimmer sel fin moitié du verre + zeste limón sutil + Finish Spray Lemon",
+      "notes": "Le Cristalino plus doux et floral que l'Ojo de Tigre — Margarita élégante. Cointreau sec + cordial maison gèrent l'acidité sans noyer le mezcal.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R11",
+      "name": "Cointreau Fizz Maracuyá",
+      "tagline": "Cointreau × maracuyá × Cinchona — tropical & vif",
+      "defaultStatus": "À tester",
+      "spirit": "liqueur",
+      "profile": ["Tropical", "Vif", "Acide", "Léger"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Cointreau", "bottleRef": "B12" },
+        { "amount": "¾ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "½ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "2 oz", "item": "Cinchona Agua Tónica", "bottleRef": "B36" }
+      ],
+      "method": "Shaker avec glace, strain en highball sur glace. Top Cinchona délicatement sur le bord du verre.",
+      "glass": "Highball",
+      "garnish": "Zeste limón sutil",
+      "notes": "La quinine de Loja équilibre le sucré du Cointreau et le tropical de la maracuyá. Ne jamais stirrer après le top gazeux.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R12",
+      "name": "Sbagliato Bar Romain",
+      "tagline": "Campari × Cinzano × Prosecco — l'erreur géniale",
+      "defaultStatus": "À tester",
+      "spirit": "liqueur",
+      "profile": ["Amer", "Floral", "Vif", "Festif"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Campari", "bottleRef": "B11" },
+        { "amount": "1½ oz", "item": "Cinzano Rosso", "bottleRef": "B15" },
+        { "amount": "2 oz", "item": "Torresella Prosecco", "bottleRef": "B37" }
+      ],
+      "method": "Campari + Cinzano dans le verre sur glaçon unique, stirrer 5 sec. Top Prosecco délicatement.",
+      "glass": "Rocks",
+      "garnish": "Zeste orange ou limón sutil",
+      "notes": "Le Negroni Sbagliato — le Prosecco remplace le gin. Plus léger, festif, parfait en apéro. Ne jamais shaker le Prosecco.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R13",
+      "name": "Cristalino Negroni",
+      "tagline": "Mezcal cristalino × Campari × Cinzano",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Amer", "Floral", "Fumé", "Complexe"],
+      "ingredients": [
+        { "amount": "1 oz", "item": "Contraluz Cristalino", "bottleRef": "B07" },
+        { "amount": "1 oz", "item": "Campari", "bottleRef": "B11" },
+        { "amount": "1 oz", "item": "Cinzano Rosso", "bottleRef": "B15" }
+      ],
+      "method": "Stirré avec glace 20 sec dans le verre à mélange. Strain en rocks glass sur glaçon unique.",
+      "glass": "Rocks",
+      "garnish": "Zeste limón sutil exprimé sur le verre",
+      "notes": "Le Cristalino donne un Negroni plus doux et floral que le mezcal classique. Le fumé subtil reste en finale — accord parfait avec l'amer du Campari.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R14",
+      "name": "Amaretto Sour — Morgenthaler",
+      "tagline": "Disaronno × Botran 8 × cordial — la référence mondiale",
+      "defaultStatus": "À tester",
+      "spirit": "liqueur",
+      "profile": ["Amer", "Mousseux", "Acide", "Complexe"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Disaronno Originale", "bottleRef": "B13" },
+        { "amount": "¾ oz", "item": "Botran 8 Solera", "bottleRef": "B05" },
+        { "amount": "1 oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "1", "item": "Blanc d'œuf" }
+      ],
+      "method": "Reverse dry shake — shake avec glace 10 sec, double strain dans shaker vide, shake sec 15 sec. Verse en rocks glass sur glace.",
+      "glass": "Rocks",
+      "garnish": "3 traits Rossard sur la mousse",
+      "notes": "Spec Morgenthaler — référence mondiale selon Jim Meehan et Difford's. Le Botran 8 équilibre le sucré du Disaronno. Le cordial maison remplace le jus + sucre.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R15",
+      "name": "Black Velvet Andino",
+      "tagline": "Mezcal × Disaronno × Cinzano — amer-amande-fumé",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Amer", "Fumé", "Complexe", "Vif"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Ojo de Tigre Mezcal", "bottleRef": "B02" },
+        { "amount": "½ oz", "item": "Disaronno Originale", "bottleRef": "B13" },
+        { "amount": "½ oz", "item": "Cinzano Rosso", "bottleRef": "B15" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "2 traits", "item": "Sharab Dr. Fire", "bottleRef": "B24" }
+      ],
+      "method": "Shaker avec glace, shake 10 sec. Double strain en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil + Finish Spray Lemon",
+      "notes": "Création originale Bar Romain. L'amande du Disaronno contre le fumé du mezcal — accord inattendu validé par Difford's. Le Dr. Fire en finale relève l'ensemble.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R16",
+      "name": "Bellini Naranjilla",
+      "tagline": "Naranjilla × Prosecco — Harry's Bar version andine",
+      "defaultStatus": "À tester",
+      "spirit": "sparkling",
+      "profile": ["Floral", "Acide", "Festif", "Léger"],
+      "ingredients": [
+        { "amount": "2 oz", "item": "Pulpa de naranjilla", "bottleRef": "B29" },
+        { "amount": "½ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "3 oz", "item": "Torresella Prosecco", "bottleRef": "B37" }
+      ],
+      "method": "Pulpa + cordial dans la flûte froide. Verse le Prosecco délicatement sur le bord. Ne jamais stirrer.",
+      "glass": "Flûte",
+      "garnish": "Aucun — laisser la couleur parler",
+      "notes": "Inspiré du Bellini Harry's Bar Venise — pêche remplacée par naranjilla équatorienne. Plus acidulé, plus exotique. La naranjilla est unique — personne en Europe ne peut faire ça.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R17",
+      "name": "Amarula Espresso",
+      "tagline": "Botran 12 × Amarula × café — dessert cocktail",
+      "defaultStatus": "À tester",
+      "spirit": "rhum",
+      "profile": ["Crémeux", "Complexe", "Tropical"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Botran 12 Solera", "bottleRef": "B04" },
+        { "amount": "1 oz", "item": "Amarula Cream", "bottleRef": "B14" },
+        { "amount": "1 oz", "item": "Café expresso refroidi" },
+        { "amount": "¼ oz", "item": "Disaronno Originale", "bottleRef": "B13" }
+      ],
+      "method": "Shaker très fort avec glace, double strain en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "3 grains de café + pincée de sel fin sur la mousse",
+      "notes": "Variation Espresso Martini sans vodka. Botran 12 + Amarula + café = vanille, caramel, fruits sauvages marula. Le Disaronno en soutien discret apporte l'amande.",
+      "isOriginal": true,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R18",
+      "name": "Maracuyá Royale",
+      "tagline": "Kir Royal tropical × Cointreau × Prosecco",
+      "defaultStatus": "À tester",
+      "spirit": "sparkling",
+      "profile": ["Tropical", "Festif", "Floral", "Léger"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "½ oz", "item": "Cointreau", "bottleRef": "B12" },
+        { "amount": "3 oz", "item": "Torresella Prosecco", "bottleRef": "B37" }
+      ],
+      "method": "Maracuyá + Cointreau dans la flûte froide. Top Prosecco délicatement sur le bord.",
+      "glass": "Flûte",
+      "garnish": "Zeste limón sutil",
+      "notes": "Kir Royal version tropicale. Le Cointreau lie le fruit et les bulles — plus sophistiqué qu'un simple jus + Prosecco. Parfait en apéro ou brunch.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R19",
+      "name": "The StiG Andin",
+      "tagline": "Cruzloma × pisco × Prosecco × Tiki — d'après Difford's",
+      "defaultStatus": "À tester",
+      "spirit": "gin",
+      "profile": ["Floral", "Vif", "Festif", "Complexe"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Cruzloma Handcrafted Gin", "bottleRef": "B08" },
+        { "amount": "1 oz", "item": "Tabernero La Botija Acholado", "bottleRef": "B01" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "2 oz", "item": "Torresella Prosecco", "bottleRef": "B37" },
+        { "amount": "2 traits", "item": "Sharab Tiki", "bottleRef": "B25" }
+      ],
+      "method": "Shaker tout sauf Prosecco avec glace, strain en coupe froide, top Prosecco délicatement.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil + Finish Spray Lemon",
+      "notes": "D'après le StiG de Simon Difford (créé pour le lancement de St-Germain 2006). L'acidité du Prosecco équilibre le pisco grapy et le floral du Cruzloma. Le Tiki apporte la couche exotique.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R20",
+      "name": "Mezcaletti Cristalino",
+      "tagline": "Mezcal cristalino × Campari × Dr. Fire — digestivo",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Amer", "Épicé", "Fumé", "Complexe"],
+      "ingredients": [
+        { "amount": "1 oz", "item": "Contraluz Cristalino", "bottleRef": "B07" },
+        { "amount": "1 oz", "item": "Campari", "bottleRef": "B11" },
+        { "amount": "¾ oz", "item": "Cinzano Rosso", "bottleRef": "B15" },
+        { "amount": "2 traits", "item": "Sharab Dr. Fire", "bottleRef": "B24" }
+      ],
+      "method": "Stirré avec glace 20 sec. Strain en rocks glass sur glaçon unique.",
+      "glass": "Rocks",
+      "garnish": "Zeste orange ou limón sutil exprimé",
+      "notes": "D'après le Mezcaletti (Difford's community). Le Dr. Fire remplace l'orange bitters et ajoute le feu. Digestivo juste du bon côté du bittersweet.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R21",
+      "name": "Club Cocktail",
+      "tagline": "Pisco × maraschino × maracuyá — recette Simon Difford",
+      "defaultStatus": "À tester",
+      "spirit": "pisco",
+      "profile": ["Floral", "Tropical", "Complexe", "Vif"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Tabernero La Botija Acholado", "bottleRef": "B01" },
+        { "amount": "½ oz", "item": "Botran 8 Solera", "bottleRef": "B05" },
+        { "amount": "½ oz", "item": "Luxardo Maraschino", "bottleRef": "B10" },
+        { "amount": "¾ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "2 traits", "item": "Rossard Amargo", "bottleRef": "B23" }
+      ],
+      "method": "Shaker avec glace, double strain en coupe froide.",
+      "glass": "Coupe",
+      "garnish": "Zeste limón sutil + Finish Spray Lemon",
+      "notes": "D'après le Club Cocktail de Simon Difford. Pisco + maraschino + tropical — accord historique. Le Rossard apporte la profondeur aromatique.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R22",
+      "name": "Explosion Tropical",
+      "tagline": "Mezcal × maracuyá × Dr. Fire à fond — le plus épicé",
+      "defaultStatus": "À tester",
+      "spirit": "mezcal",
+      "profile": ["Épicé", "Fumé", "Tropical", "Vif"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Ojo de Tigre Mezcal", "bottleRef": "B02" },
+        { "amount": "¾ oz", "item": "Cordial limón sutil maison", "bottleRef": "B17" },
+        { "amount": "½ oz", "item": "Pulpa de maracuyá", "bottleRef": "B28" },
+        { "amount": "4 traits", "item": "Sharab Dr. Fire", "bottleRef": "B24" },
+        { "amount": "¼ oz", "item": "Botran 12 (flotté)", "bottleRef": "B04" }
+      ],
+      "method": "Shaker tout sauf le Botran avec glace, strain en rocks glass sur glace. Flotte le Botran 12 sur le dessus.",
+      "glass": "Rocks",
+      "garnish": "Rimmer sel fin + zeste limón sutil",
+      "notes": "D'après Explosion (Difford's community). Le cocktail le plus épicé du catalogue — Dr. Fire à fond. Le Botran flotté ajoute une couche de profondeur en finale.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R23",
+      "name": "Frangipane Andino",
+      "tagline": "Botran 12 × Disaronno — Old Fashioned amande",
+      "defaultStatus": "À tester",
+      "spirit": "rhum",
+      "profile": ["Complexe", "Crémeux", "Amer"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Botran 12 Solera", "bottleRef": "B04" },
+        { "amount": "½ oz", "item": "Disaronno Originale", "bottleRef": "B13" },
+        { "amount": "2 traits", "item": "Rossard Amargo", "bottleRef": "B23" },
+        { "amount": "2 traits", "item": "Sharab Tiki", "bottleRef": "B25" }
+      ],
+      "method": "Stirré avec glace 20 sec sur glaçon unique. Rocks glass.",
+      "glass": "Rocks",
+      "garnish": "Zeste orange exprimé + Finish Spray Lemon",
+      "notes": "D'après le Frangipane Old Fashioned (Make Me a Cocktail). Old Fashioned aux notes d'amande. Sirop de panela en option pour arrondir.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    },
+    {
+      "id": "R24",
+      "name": "Amarula Flip",
+      "tagline": "Botran 12 × Amarula × Disaronno — dessert soyeux",
+      "defaultStatus": "À tester",
+      "spirit": "rhum",
+      "profile": ["Crémeux", "Complexe", "Tropical"],
+      "ingredients": [
+        { "amount": "1½ oz", "item": "Botran 12 Solera", "bottleRef": "B04" },
+        { "amount": "1 oz", "item": "Amarula Cream", "bottleRef": "B14" },
+        { "amount": "½ oz", "item": "Disaronno Originale", "bottleRef": "B13" },
+        { "amount": "1", "item": "Œuf entier" },
+        { "amount": "2 traits", "item": "Sharab Tiki", "bottleRef": "B25" }
+      ],
+      "method": "Reverse dry shake intense — shake avec glace, double strain, shake sec vigoureux 20 sec. Verse en coupe.",
+      "glass": "Coupe",
+      "garnish": "Noix de muscade râpée",
+      "notes": "Dessert riche, texture soyeuse. Accord marula-amande-vanille. L'œuf entier (pas juste le blanc) donne le corps.",
+      "isOriginal": false,
+      "createdAt": "2026-05"
+    }
+  ]
+}

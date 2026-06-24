@@ -77,3 +77,70 @@ export interface UserCellarEntry {
 }
 
 export type UserCellar = Record<string, UserCellarEntry>
+
+// ── BAR ────────────────────────────────────────────────
+export type BarCategory = 'spiritueux' | 'liqueurs' | 'sirops' | 'bitters' | 'frais' | 'divers'
+export type StockStatus = 'ok' | 'low' | 'out'
+
+export interface BarItem {
+  id: string
+  category: BarCategory
+  name: string
+  brand?: string
+  spirit?: string
+  abv?: number
+  volume?: string
+  origin?: string
+  defaultStatus: StockStatus
+  notes?: string
+}
+
+export interface UserBarEntry {
+  status?: StockStatus
+  personalNote?: string
+  updatedAt?: string
+}
+
+export type UserBar = Record<string, UserBarEntry>
+
+// ── RECIPES ────────────────────────────────────────────
+export type RecipeStatus = 'À tester' | 'En cours' | 'Validé' | 'Classique maison' | 'Abandonné'
+export type RecipeSpirit =
+  | 'pisco' | 'mezcal' | 'rhum' | 'gin' | 'vodka' | 'tequila' | 'whisky'
+  | 'liqueur' | 'sparkling' | 'other'
+
+export interface RecipeIngredient {
+  amount: string
+  item: string
+  bottleRef?: string
+}
+
+export interface Recipe {
+  id: string
+  name: string
+  tagline?: string
+  defaultStatus: RecipeStatus
+  spirit: RecipeSpirit
+  profile: string[]
+  ingredients: RecipeIngredient[]
+  method: string
+  glass: string
+  garnish?: string
+  notes?: string
+  isOriginal?: boolean
+  createdAt?: string
+}
+
+export interface RecipeVersion {
+  text: string
+  date: string
+}
+
+export interface UserRecipeEntry {
+  status?: RecipeStatus
+  personalScore?: number | null
+  versions?: RecipeVersion[]
+  updatedAt?: string
+}
+
+export type UserRecipes = Record<string, UserRecipeEntry>

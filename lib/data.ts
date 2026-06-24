@@ -1,9 +1,55 @@
 import winesJson from '@/data/wines.json'
 import shopsJson from '@/data/shops.json'
-import type { Wine, Shop } from './types'
+import barJson from '@/data/bar.json'
+import recipesJson from '@/data/recipes.json'
+import type { Wine, Shop, BarItem, BarCategory, Recipe } from './types'
 
 export const wines: Wine[] = (winesJson as { wines: Wine[] }).wines
 export const shops: Shop[] = (shopsJson as { shops: Shop[] }).shops
+export const barItems: BarItem[] = (barJson as { items: BarItem[] }).items
+export const recipes: Recipe[] = (recipesJson as { recipes: Recipe[] }).recipes
+
+export function getBarItem(id: string): BarItem | undefined {
+  return barItems.find((b) => b.id === id)
+}
+
+export function getRecipe(id: string): Recipe | undefined {
+  return recipes.find((r) => r.id === id)
+}
+
+export const barCategoryLabels: Record<BarCategory, string> = {
+  spiritueux: 'Spiritueux',
+  liqueurs: 'Liqueurs',
+  sirops: 'Sirops',
+  bitters: 'Bitters',
+  frais: 'Frais',
+  divers: 'Divers',
+}
+
+export const barCategoryOrder: BarCategory[] = [
+  'spiritueux', 'liqueurs', 'sirops', 'bitters', 'frais', 'divers',
+]
+
+export const spiritLabels: Record<string, string> = {
+  pisco: 'Pisco',
+  mezcal: 'Mezcal',
+  rhum: 'Rhum',
+  gin: 'Gin',
+  vodka: 'Vodka',
+  tequila: 'Tequila',
+  whisky: 'Whisky',
+  liqueur: 'Liqueur',
+  sparkling: 'Pétillant',
+  other: 'Autre',
+}
+
+export const recipeStatusLabels: Record<string, string> = {
+  'À tester': 'À tester',
+  'En cours': 'En cours',
+  'Validé': 'Validé',
+  'Classique maison': 'Classique',
+  'Abandonné': 'Abandonné',
+}
 
 export function getWine(id: string): Wine | undefined {
   return wines.find((w) => w.id === id)

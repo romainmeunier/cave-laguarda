@@ -46,11 +46,12 @@ export default function RootLayout({
                 Cave · Bar · Cumbayá
               </span>
             </Link>
-            <nav className="flex items-center gap-1 sm:gap-2 text-sm">
+            <nav className="flex items-center gap-1 sm:gap-2 text-sm flex-wrap justify-end">
               <NavLink href="/">Cave</NavLink>
+              <NavLink href="/bar">Bar</NavLink>
+              <NavLink href="/cocktails">Cocktails</NavLink>
               <NavLink href="/deals">Affaires</NavLink>
               <NavLink href="/shops">Cavistes</NavLink>
-              <NavLink href="/wines/new">+ Ajouter</NavLink>
               <div className="ml-2 pl-2 border-l border-ink-900/10">
                 <AuthBar />
               </div>

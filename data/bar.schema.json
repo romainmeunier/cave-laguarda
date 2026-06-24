@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cave Laguarda — Bar items",
+  "type": "object",
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "category", "name", "defaultStatus"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^B\\d{2,}$" },
+          "category": { "type": "string", "enum": ["spiritueux", "liqueurs", "sirops", "bitters", "frais", "divers"] },
+          "name": { "type": "string" },
+          "brand": { "type": "string" },
+          "spirit": { "type": "string" },
+          "abv": { "type": "number" },
+          "volume": { "type": "string" },
+          "origin": { "type": "string" },
+          "defaultStatus": { "type": "string", "enum": ["ok", "low", "out"] },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

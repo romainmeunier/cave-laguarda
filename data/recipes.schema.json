@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cave Laguarda — Recipes",
+  "type": "object",
+  "required": ["recipes"],
+  "properties": {
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "spirit", "ingredients", "method", "glass"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^R\\d{2,}$" },
+          "name": { "type": "string" },
+          "tagline": { "type": "string" },
+          "defaultStatus": { "type": "string", "enum": ["À tester", "En cours", "Validé", "Classique maison", "Abandonné"] },
+          "spirit": { "type": "string", "enum": ["pisco", "mezcal", "rhum", "gin", "vodka", "tequila", "whisky", "liqueur", "sparkling", "other"] },
+          "profile": { "type": "array", "items": { "type": "string" } },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["amount", "item"],
+              "properties": {
+                "amount": { "type": "string" },
+                "item": { "type": "string" },
+                "bottleRef": { "type": "string" }
+              }
+            }
+          },
+          "method": { "type": "string" },
+          "glass": { "type": "string" },
+          "garnish": { "type": "string" },
+          "notes": { "type": "string" },
+          "isOriginal": { "type": "boolean" },
+          "createdAt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

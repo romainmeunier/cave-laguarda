@@ -1,7 +1,11 @@
-# Cave Laguarda — Notes pour Claude
+# Maison Meunier — Notes pour Claude
 
-App perso de Romain : suivi de cave **multi-cavistes** à Quito / Cumbayá, Équateur.
+App perso de Romain : suivi de **cave + bar + cocktails** à Quito / Cumbayá, Équateur.
 Static Next.js déployé sur GitHub Pages.
+
+Le repo s'appelle toujours `cave-laguarda` (l'URL reste `romainmeunier.github.io/cave-laguarda/`),
+mais la marque affichée est **Maison Meunier** depuis qu'on a fusionné le suivi cocktails
+de Bar Romain.
 
 ## Qui est l'utilisateur
 
@@ -11,6 +15,18 @@ Static Next.js déployé sur GitHub Pages.
   parfois en magasin physique car Rappi/UberEats n'affichent pas toujours les millésimes.
 - Curatera/ajoute des vins de **plusieurs cavistes** au fil du temps (Laguarda d'abord,
   La Cava, Wine House, Cellar Ecuador, Quitovino prévus).
+
+## Domaines couverts
+
+| Domaine | Fichier data | Routes | Suivi user |
+|---|---|---|---|
+| Vins (cave) | `data/wines.json` (12 vins, L01..L12) | `/`, `/wines/[id]` | Supabase `user_cellar` |
+| Bar (bouteilles, sirops, frais) | `data/bar.json` (38 items, B01..B38) | `/bar` | (à venir) `user_bar` |
+| Cocktails (recettes) | `data/recipes.json` (24 recettes, R01..R24) | `/cocktails`, `/cocktails/[id]` | (à venir) `user_recipes` |
+| Cavistes | `data/shops.json` | `/shops` | — |
+
+Chaque ingrédient de recette pointe optionnellement vers `bottleRef` (id de `bar.json`).
+Quand `bottleRef` est absent, c'est un ingrédient frais hors inventaire (œuf, café, eau gazeuse).
 
 ## Tâche par défaut
 
@@ -37,6 +53,12 @@ Quand Romain te demande quelque chose ici, par défaut c'est l'une de ces tâche
    compléter les `shopPrices[]` des vins existants si dispo chez plusieurs caviste.
 
 4. **Itérer l'UI** quand Romain identifie un problème de lisibilité ou un besoin.
+
+5. **Ajouter une bouteille au bar** dans `data/bar.json` (préfixe d'ID `B`, catégories
+   `spiritueux | liqueurs | sirops | bitters | frais | divers`).
+
+6. **Ajouter une recette de cocktail** dans `data/recipes.json` (préfixe d'ID `R`,
+   spirit dominant, ingrédients avec `bottleRef` pointant vers `bar.json` quand possible).
 
 ## Stack
 

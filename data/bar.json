@@ -1,0 +1,47 @@
+{
+  "items": [
+    { "id": "B01", "category": "spiritueux", "name": "Pisco Acholado", "brand": "Tabernero La Botija", "spirit": "pisco", "origin": "Pérou", "defaultStatus": "ok", "notes": "Péruvien, multi-cépages — rond et aromatique" },
+    { "id": "B02", "category": "spiritueux", "name": "Mezcal", "brand": "Ojo de Tigre", "spirit": "mezcal", "origin": "Mexique", "defaultStatus": "ok", "notes": "Fumé, agave — très correct" },
+    { "id": "B03", "category": "spiritueux", "name": "Rhum Añejo", "brand": "Ron Abuelo Reserva Especial", "spirit": "rhum", "origin": "Panama", "defaultStatus": "ok", "notes": "Panaméen — vanille, caramel, fruité" },
+    { "id": "B04", "category": "spiritueux", "name": "Rhum 12 Solera", "brand": "Botran", "spirit": "rhum", "origin": "Guatemala", "defaultStatus": "ok", "notes": "Guatémaltèque — doux, complexe, miel de canne" },
+    { "id": "B05", "category": "spiritueux", "name": "Rhum 8 Solera", "brand": "Botran", "spirit": "rhum", "origin": "Guatemala", "defaultStatus": "ok", "notes": "Guatémaltèque — plus léger, bon pour cocktails" },
+    { "id": "B06", "category": "spiritueux", "name": "Gin", "brand": "Tanqueray", "spirit": "gin", "origin": "Royaume-Uni", "defaultStatus": "ok", "notes": "London Dry classique, très junipérisé" },
+    { "id": "B07", "category": "spiritueux", "name": "Mezcal Cristalino", "brand": "Contraluz", "spirit": "mezcal", "volume": "700ml", "origin": "Mexique", "defaultStatus": "ok", "notes": "Artesanal reposado filtré — doux, élégant, moins fumé que l'Ojo de Tigre" },
+    { "id": "B08", "category": "spiritueux", "name": "Gin Handcrafted", "brand": "Cruzloma", "spirit": "gin", "abv": 44, "origin": "Équateur", "defaultStatus": "ok", "notes": "Équatorien, distillé à 0°0'0' — guayusa, coca, eau Cotopaxi" },
+
+    { "id": "B09", "category": "liqueurs", "name": "Triplum Triple Sec", "brand": "Luxardo", "origin": "Italie", "defaultStatus": "ok", "notes": "Orange & mandarine, plus aromatique qu'un triple sec classique" },
+    { "id": "B10", "category": "liqueurs", "name": "Maraschino", "brand": "Luxardo", "origin": "Italie", "defaultStatus": "ok", "notes": "La référence absolue — cerise & noyau" },
+    { "id": "B11", "category": "liqueurs", "name": "Campari", "brand": "Campari Milano", "origin": "Italie", "defaultStatus": "ok", "notes": "Amer italien — Negroni, Spritz" },
+    { "id": "B12", "category": "liqueurs", "name": "Cointreau", "brand": "Cointreau", "volume": "750ml", "origin": "France", "defaultStatus": "ok", "notes": "Triple sec français référence — plus sec et pur que le Triplum" },
+    { "id": "B13", "category": "liqueurs", "name": "Amaretto", "brand": "Disaronno Originale", "abv": 28, "volume": "375ml", "origin": "Italie", "defaultStatus": "ok", "notes": "Amaretto italien — amande, vanille, abricot" },
+    { "id": "B14", "category": "liqueurs", "name": "Amarula Cream", "brand": "Amarula", "volume": "375ml", "origin": "Afrique du Sud", "defaultStatus": "ok", "notes": "Crème de marula — fruits sauvages, caramel, vanille" },
+    { "id": "B15", "category": "liqueurs", "name": "Vermouth Rosso", "brand": "Cinzano", "origin": "Italie", "defaultStatus": "ok", "notes": "Vermouth rouge — Negroni, Manhattan" },
+
+    { "id": "B16", "category": "sirops", "name": "Sirop simple 1:1", "brand": "Maison", "defaultStatus": "out", "notes": "Sucre blanc + eau — base de tout" },
+    { "id": "B17", "category": "sirops", "name": "Cordial limón sutil — Batch A", "brand": "Maison", "defaultStatus": "ok", "notes": "Méthode à froid 24h — aromatique, floral, subtil" },
+    { "id": "B18", "category": "sirops", "name": "Cordial limón sutil — Batch B", "brand": "Maison", "defaultStatus": "ok", "notes": "Morgenthaler blender — intense, vif, prêt immédiatement" },
+    { "id": "B19", "category": "sirops", "name": "Sirop de maracuyá", "brand": "Maison", "defaultStatus": "out", "notes": "Pulpa + sucre blanc à chaud" },
+    { "id": "B20", "category": "sirops", "name": "Sirop de panela", "brand": "Maison", "defaultStatus": "out", "notes": "Panela + eau — Mojito, Old Fashioned" },
+    { "id": "B21", "category": "sirops", "name": "Sirop de miel", "brand": "Maison", "defaultStatus": "out", "notes": "2:1 miel + eau chaude — Mezcal, Gin" },
+
+    { "id": "B22", "category": "bitters", "name": "Angostura", "brand": "À acheter", "defaultStatus": "out", "notes": "Chercher chez LaGuarda" },
+    { "id": "B23", "category": "bitters", "name": "Amargo Aromático", "brand": "Rossard", "volume": "165ml", "origin": "Colombie", "defaultStatus": "ok", "notes": "Substitut Angostura colombien" },
+    { "id": "B24", "category": "bitters", "name": "Bitters Dr. Fire", "brand": "Sharab", "volume": "50ml", "origin": "France", "defaultStatus": "ok", "notes": "Non-alcoolisé, piment" },
+    { "id": "B25", "category": "bitters", "name": "Bitters Tiki", "brand": "Sharab", "volume": "50ml", "origin": "France", "defaultStatus": "ok", "notes": "Non-alcoolisé, tropical" },
+    { "id": "B26", "category": "bitters", "name": "Finish Spray Lemon", "brand": "Finish", "origin": "France", "defaultStatus": "ok", "notes": "Spray finition citron — garnish pro" },
+
+    { "id": "B27", "category": "frais", "name": "Limones sutiles", "brand": "Local", "defaultStatus": "ok", "notes": "Moins acides que citron vert" },
+    { "id": "B28", "category": "frais", "name": "Pulpa de Maracuyá", "brand": "Supermaxi", "volume": "1.1L", "defaultStatus": "ok", "notes": "100% naturel" },
+    { "id": "B29", "category": "frais", "name": "Pulpa de Naranjilla", "brand": "FrutaSí", "volume": "500g", "origin": "Équateur", "defaultStatus": "ok", "notes": "Congelée — typiquement équatorien" },
+    { "id": "B30", "category": "frais", "name": "Hierbabuena", "brand": "Megamaxi", "defaultStatus": "ok", "notes": "Menthe verte locale — Mojito, garnish" },
+    { "id": "B31", "category": "frais", "name": "Jugo de Naranja", "brand": "D'hoy", "volume": "1L", "defaultStatus": "ok", "notes": "100% naturel" },
+
+    { "id": "B32", "category": "divers", "name": "Sucre blanc", "brand": "Maison", "defaultStatus": "ok", "notes": "Cordial limón, sirop maracuyá" },
+    { "id": "B33", "category": "divers", "name": "Azúcar Moreno Crudo", "brand": "Maison", "defaultStatus": "ok", "notes": "Sirops épicés, rhum" },
+    { "id": "B34", "category": "divers", "name": "Panela", "brand": "Maison", "defaultStatus": "ok", "notes": "Canne non raffinée — Mojito, Old Fashioned" },
+    { "id": "B35", "category": "divers", "name": "Sel fin", "brand": "Maison", "defaultStatus": "ok", "notes": "Rimmer Margarita & Mezcal" },
+    { "id": "B36", "category": "divers", "name": "Agua Tónica", "brand": "Cinchona Drinks", "origin": "Équateur", "defaultStatus": "ok", "notes": "Équatorienne, quinine naturelle de Loja" },
+    { "id": "B37", "category": "divers", "name": "Prosecco DOC", "brand": "Torresella", "volume": "375ml", "origin": "Italie", "defaultStatus": "ok", "notes": "Italien — Spritz, Mimosa, Bellini" },
+    { "id": "B38", "category": "divers", "name": "Miel", "brand": "Maison", "defaultStatus": "ok", "notes": "Sirop de miel — Mezcal, Gin" }
+  ]
+}
