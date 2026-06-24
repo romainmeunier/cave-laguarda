@@ -1,5 +1,7 @@
 import { barItems, barCategoryLabels, barCategoryOrder } from '@/lib/data'
-import type { BarCategory, BarItem } from '@/lib/types'
+import type { BarCategory } from '@/lib/types'
+import { BarItemRow } from '@/components/BarItemRow'
+import { BarStats } from '@/components/BarStats'
 
 const categoryIcons: Record<BarCategory, string> = {
   spiritueux: '🥃',
@@ -26,14 +28,17 @@ export default function BarPage() {
           Le <span className="text-wine-700 italic">bar</span>.
         </h1>
         <p className="text-ink-700 text-lg leading-relaxed">
-          Inventaire des bouteilles, sirops maison, bitters et ingrédients frais qui
-          composent les cocktails. Chaque référence est liée aux recettes qui l'utilisent.
+          Inventaire des bouteilles, sirops maison, bitters et ingrédients frais.
+          Clique sur un statut pour le cycler (En stock → Bientôt fini → Épuisé). Édite
+          les notes au clic. Synchronisé entre tes devices si tu es connecté.
         </p>
       </section>
 
-      <hr className="editorial-rule mb-10" />
+      <hr className="editorial-rule mb-8" />
 
-      <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 mb-12">
+      <BarStats items={barItems} />
+
+      <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 mt-6 mb-12">
         {grouped.map(({ cat, items }) => (
           <a
             key={cat}
@@ -72,45 +77,5 @@ export default function BarPage() {
         ))}
       </div>
     </div>
-  )
-}
-
-function BarItemRow({ item }: { item: BarItem }) {
-  const statusCfg = {
-    ok: { label: 'En stock', cls: 'bg-emerald-50 text-emerald-700 border-emerald-300/50' },
-    low: { label: 'Bientôt fini', cls: 'bg-gold-400/20 text-gold-600 border-gold-400/40' },
-    out: { label: 'Épuisé', cls: 'bg-wine-100 text-wine-700 border-wine-700/30' },
-  }[item.defaultStatus]
-
-  return (
-    <li className="grid grid-cols-[2.75rem_1fr_auto] sm:grid-cols-[2.75rem_minmax(0,2fr)_minmax(0,3fr)_auto] items-baseline gap-x-4 py-3">
-      <span className="font-mono text-[10px] uppercase text-ink-400 tabular-nums">{item.id}</span>
-
-      <div className="min-w-0">
-        <h3 className="font-display text-base text-ink-900 leading-tight truncate">{item.name}</h3>
-        {item.brand && (
-          <p className="text-xs text-ink-500 italic truncate">
-            {item.brand}
-            {item.origin && <span className="not-italic text-ink-400"> · {item.origin}</span>}
-            {item.volume && <span className="not-italic text-ink-400 font-mono"> · {item.volume}</span>}
-            {item.abv && <span className="not-italic text-ink-400 font-mono"> · {item.abv}%</span>}
-          </p>
-        )}
-      </div>
-
-      <p className="hidden sm:block text-sm text-ink-700 truncate italic">
-        {item.notes ?? <span className="text-ink-400 not-italic">—</span>}
-      </p>
-
-      <span className={`inline-flex items-center px-2 py-0.5 rounded-sm text-[10px] uppercase tracking-widest font-medium border ${statusCfg.cls} justify-self-end`}>
-        {statusCfg.label}
-      </span>
-
-      {item.notes && (
-        <p className="sm:hidden col-span-3 text-xs text-ink-500 italic mt-1 -mb-1">
-          {item.notes}
-        </p>
-      )}
-    </li>
   )
 }
