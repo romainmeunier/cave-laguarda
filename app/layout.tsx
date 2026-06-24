@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Fraunces, Inter_Tight, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import { AuthBar } from '@/components/AuthBar'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -50,6 +51,9 @@ export default function RootLayout({
               <NavLink href="/deals">Affaires</NavLink>
               <NavLink href="/shops">Cavistes</NavLink>
               <NavLink href="/wines/new">+ Ajouter</NavLink>
+              <div className="ml-2 pl-2 border-l border-ink-900/10">
+                <AuthBar />
+              </div>
             </nav>
           </div>
         </header>
