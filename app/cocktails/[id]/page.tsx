@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { recipes, getRecipe, getBarItem, spiritLabels, recipeStatusLabels } from '@/lib/data'
-import type { Recipe } from '@/lib/types'
+import { RecipeActions } from '@/components/RecipeActions'
+import { RecipeStatusBadge } from '@/components/RecipeStatusBadge'
+import { IngredientRow } from '@/components/IngredientRow'
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ id: r.id }))
@@ -25,9 +27,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
           <span className="text-xs uppercase tracking-widest text-gold-600 font-mono">
             {spiritLabels[recipe.spirit] ?? recipe.spirit}
           </span>
-          <span className="inline-flex items-center px-2 py-0.5 rounded-sm text-[10px] uppercase tracking-widest font-medium border border-gold-400/60 text-gold-600 bg-gold-400/10">
-            {recipeStatusLabels[recipe.defaultStatus] ?? recipe.defaultStatus}
-          </span>
+          <RecipeStatusBadge recipeId={recipe.id} defaultStatus={recipe.defaultStatus} />
           {recipe.isOriginal && (
             <span className="bg-wine-700 text-cream-50 text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-sm font-medium">
               ★ Création originale
@@ -51,25 +51,12 @@ export default function RecipePage({ params }: { params: { id: string } }) {
               {recipe.ingredients.map((ing, i) => {
                 const bottle = ing.bottleRef ? getBarItem(ing.bottleRef) : null
                 return (
-                  <li key={i} className="grid grid-cols-[5rem_1fr_auto] items-baseline gap-x-4 py-2.5">
-                    <span className="score-mono text-wine-700 font-semibold tabular-nums text-sm">
-                      {ing.amount}
-                    </span>
-                    <span className="text-ink-900">{ing.item}</span>
-                    {bottle ? (
-                      <Link
-                        href={`/bar#${bottle.category}`}
-                        className="text-[10px] uppercase tracking-widest text-ink-400 hover:text-wine-700 font-mono"
-                        title={`Voir ${bottle.name} dans le bar`}
-                      >
-                        → {bottle.id}
-                      </Link>
-                    ) : (
-                      <span className="text-[10px] uppercase tracking-widest text-ink-300 font-mono">
-                        ext
-                      </span>
-                    )}
-                  </li>
+                  <IngredientRow
+                    key={i}
+                    amount={ing.amount}
+                    item={ing.item}
+                    bottle={bottle ?? null}
+                  />
                 )
               })}
             </ul>
@@ -116,14 +103,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
             </dl>
           </div>
 
-          <div className="bg-cream-50 border border-ink-900/10 rounded-sm p-5">
-            <h3 className="font-display text-lg text-ink-900 mb-1">Mon suivi</h3>
-            <p className="text-xs text-ink-500 uppercase tracking-widest mb-3">À venir — phase 3</p>
-            <p className="text-sm text-ink-700 leading-relaxed">
-              Bientôt : marquer dégustée, ajouter ta version (modifs de ratio), notes
-              perso sur cette recette, et tout ça synchronisé entre tes devices.
-            </p>
-          </div>
+          <RecipeActions recipeId={recipe.id} defaultStatus={recipe.defaultStatus} />
         </aside>
       </div>
     </article>
