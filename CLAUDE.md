@@ -106,10 +106,14 @@ est en fait courant à acheter (ex café), envisager de l'ajouter dans `bar.json
 
 ## Workflow d'édition typique
 
-1. Édite `data/wines.json` (et/ou `data/shops.json`).
+1. Édite `data/wines.json` (et/ou `data/shops.json` / `data/bar.json` / `data/recipes.json`).
 2. `npm run dev` ou `npm run build` pour vérifier.
 3. Commit + push sur `main` → GitHub Actions redéploie sur
-   `https://romainmeunier.github.io/cave-laguarda/` en ~2 min.
+   `https://romainmeunier.github.io/cave-laguarda/` en ~2-5 min.
+4. **TOUJOURS** vérifier que le déploiement a réussi avec
+   `gh run watch <run-id> --repo romainmeunier/cave-laguarda --exit-status`
+   (ou `gh run list --repo romainmeunier/cave-laguarda --limit 1` pour un check rapide).
+   Reporter à Romain si rouge.
 
 ## Commandes utiles
 
