@@ -24,8 +24,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Cave Laguarda — Quito',
-  description: 'Cave personnelle curatée — Romain, Cumbayá. Multi-source, multi-caviste.',
+  title: 'Maison Meunier — Cumbayá',
+  description: 'Cave & bar — Romain, Cumbayá / Quito. Vins curatés, spiritueux, cocktails.',
 }
 
 export default function RootLayout({
@@ -39,11 +39,11 @@ export default function RootLayout({
         <header className="border-b border-ink-900/10 bg-cream-50/80 backdrop-blur supports-[backdrop-filter]:bg-cream-50/70 sticky top-0 z-30">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between gap-6">
             <Link href="/" className="group flex items-baseline gap-3">
-              <span className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-wine-700 leading-none">
-                Cave Laguarda
+              <span className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-wine-700 leading-none italic">
+                Maison Meunier
               </span>
               <span className="hidden sm:inline text-[10px] uppercase tracking-widest text-ink-500 mt-1">
-                Cumbayá · Quito
+                Cave · Bar · Cumbayá
               </span>
             </Link>
             <nav className="flex items-center gap-1 sm:gap-2 text-sm">

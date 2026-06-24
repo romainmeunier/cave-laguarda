@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <section className="mb-12 max-w-3xl">
         <p className="text-[11px] uppercase tracking-widest text-gold-600 mb-3 font-mono">
-          Cave personnelle · Cumbayá · v0.1
+          Maison Meunier · Cave · Cumbayá
         </p>
         <h1 className="font-display text-4xl sm:text-6xl text-ink-900 leading-[0.95] tracking-tight mb-5">
           La cave de Romain,
